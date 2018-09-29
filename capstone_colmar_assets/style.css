@@ -1,5 +1,6 @@
 body {
-    width: 1400px;
+    max-width: 1600px;
+    font-family: helvetica;
 }
 /*-- start of the header --*/
 header {
@@ -20,9 +21,6 @@ header {
 }
 .menu ul li {
     padding: 0px 8px 0px 8px;
-}
-nav {
-
 }
 .logo {
     display: flex;
@@ -62,6 +60,9 @@ header .menu ul {
     color: #4a4a4a;
     margin-left: 24px;
 }
+.banner-text h1 {
+    margin-bottom: 0px;
+}
 .start-btn {
     display: flex;
     justify-content: center;  
@@ -83,6 +84,7 @@ header .menu ul {
     font-size: 32px;
     margin-left: 24px;
     margin-bottom: 24px;
+    font-family: Archivo black;
 }
 .banner-two p {
     margin-bottom: 48px;
@@ -111,10 +113,11 @@ header .menu ul {
     border-bottom: 2px solid lightgray;
 }
 .column-box img {
-    width: 45%;
-    height: auto;
+    width: 35%;
+    height: 200px;
     margin: 0px 16px;
     margin-bottom: 16px;
+    min-width: 200px;
 }
 .column-content {
     display: flex;
@@ -141,9 +144,10 @@ header .menu ul {
     border-top: 2px solid lightgrey;
 }
 .campus img {
-    width: 45%;
-    height: auto;
+    width: 35%;
+    height: 200px;
     margin: 16px 16px;
+    min-width: 200px;
 }
 .course-content {
     display: flex;
@@ -169,7 +173,9 @@ header .menu ul {
 }
 .lecture img {
     margin: 16px 16px;
-    width: 45%;
+    width: 35%;
+    height: 200px;
+    min-width: 200px;
 }
 .lecture-content {
     display: flex;
@@ -180,19 +186,20 @@ header .menu ul {
     margin-bottom: 32px;
 }
 .lecture-content h4 {
-
-}
-.lecture-content p {
-
+    margin: 0px;
+    font-size: 32px;
 }
 .lecture-content span {
-
+    color: blue;
 }
 /*-- end of banner two--*/
 /*-- start of banner three--*/
 .banner-three {
     background-color: lightgrey;
     padding-bottom: 16px;
+}
+.banner-three-content {
+    margin: 16px 16px 24px 16px;
 }
 .banner-topic {
     margin-bottom: 32px;
@@ -211,9 +218,63 @@ header .menu ul {
     margin-bottom: 24px;
     max-width: 550px;
     background-color: #ffffff;
+    min-width: 300px;
 }
 .img-columns img {
     height: 60%;
     width: 100%;
 }
+
 /*-- end of banner three--*/
+/*-- start of banner four--*/
+.banner-four {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    margin: 32px 0px;
+}
+.banner-vid-column {
+    display: flex;
+}
+.banner-vid {
+    width: 60%;
+}
+.banner-vid video {
+    width: 60%;
+    width: 100%;
+}
+.banner-four-column {
+    width: 40%;
+    margin-left: 24px;
+}
+.banner-four-column img {
+    width: 35%;
+    max-height: 200px;
+    padding: 16px 16px;
+    padding-top: 0px;
+    min-width: 200px;
+}
+.banner-column-fisma {
+    display: flex;
+}
+.banner-column-now {
+    display: flex;
+}
+.column-content-fisma {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*-- end of banner four--*/
+/*-- start of footer --*/
+.footer {
+    border-top: 2px solid grey;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+}
+.footer span {
+    margin-right: 10px;
+}
+/*-- end of footer --*/
