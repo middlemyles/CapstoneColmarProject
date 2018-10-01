@@ -85,16 +85,18 @@ header .menu ul {
     margin-left: 24px;
     margin-bottom: 24px;
     font-family: Archivo black;
+    color: #4a4a4a;
 }
 .banner-two p {
     margin-bottom: 48px;
     margin-left: 24px;
     max-width: 810px;
+    color: #595959;
 }
 .banner-two span {
     margin-left: 24px;
     padding-bottom: 32px;
- 
+    color: #595959
 }
 .img-two {
     width: 848px;
@@ -107,6 +109,7 @@ header .menu ul {
     width: 40%;
     padding-top: 32px;
     border-left: 2px solid lightgrey;
+    color: #4a4a4a;
 }
 .column-box {
     display: flex;
@@ -135,9 +138,10 @@ header .menu ul {
 .column-content p {
     margin-top: 0px;
     margin-bottom: 8px;
+    color: #595959;
 }
 .column-content span {
-    color: blue;
+    color: cornflowerblue;
 }
 .campus {
     display: flex;
@@ -190,7 +194,7 @@ header .menu ul {
     font-size: 32px;
 }
 .lecture-content span {
-    color: blue;
+    color: cornflowerblue;
 }
 /*-- end of banner two--*/
 /*-- start of banner three--*/
@@ -201,6 +205,7 @@ header .menu ul {
 .banner-three-content {
     margin: 16px 16px 24px 16px;
 }
+
 .banner-topic {
     margin-bottom: 32px;
     display: flex;
@@ -208,6 +213,7 @@ header .menu ul {
     align-content: center;
     padding-top: 32px;
     font-size: 4rem;
+    color: #4a4a4a;
 }
 .centered-imgs {
     display: flex;
@@ -220,6 +226,14 @@ header .menu ul {
     background-color: #ffffff;
     min-width: 300px;
 }
+.img-columns h1 {
+    color: #4a4a4a;
+}
+.img-columns p,
+    .img-columns span {
+        color: #595959;
+        line-height: 1.5;
+    }
 .img-columns img {
     height: 60%;
     width: 100%;
@@ -243,6 +257,12 @@ header .menu ul {
     width: 60%;
     width: 100%;
 }
+.banner-vid h1 {
+    color: #4a4a4a;
+}
+.banner-vid span {
+    color: #595959;
+}
 .banner-four-column {
     width: 40%;
     margin-left: 24px;
@@ -251,7 +271,6 @@ header .menu ul {
     width: 35%;
     max-height: 200px;
     padding: 16px 16px;
-    padding-top: 0px;
     min-width: 200px;
 }
 .banner-column-fisma {
@@ -266,6 +285,12 @@ header .menu ul {
     flex-direction: column;
     justify-content: center;
 }
+.column-content-fisma h1 {
+    color: #4a4a4a;
+}
+.column-content-fisma span {
+    color: #595959;
+}
 /*-- end of banner four--*/
 /*-- start of footer --*/
 .footer {
@@ -273,8 +298,125 @@ header .menu ul {
     display: flex;
     justify-content: space-between;
     padding: 16px 24px;
+    color: #595959;
 }
 .footer span {
     margin-right: 10px;
 }
 /*-- end of footer --*/
+/*-- start of media quaries --*/
+@media only screen and (max-width: 480px), (orientation: portrait) {
+    .Desktop {
+        display: none;
+    }
+    .Mobile {
+        max-width: 480px;
+        margin: 0;
+        font-family: helvetica;
+        border: 1px solid darkgrey;
+    }
+    .Mobile img {
+        max-width: 100%;
+    }
+    .mobile-img-one {
+        max-height: 300px;
+        display: flex;
+        max-width: 100%;
+    }
+    .learn-some {
+        color: #4a4a4a;
+        background-color: lightgrey;
+        padding: 32px 16px;
+        line-height: 1.5;
+    }
+    .learn-some h1 {
+        margin: 0;
+        font-size: 36px;
+        margin-bottom: 32px;
+    }
+    .learn-some p {
+        color: #595959;
+        margin: 0;
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    .start-here {
+        display: flex;
+        justify-content: center;
+        background-color: grey;
+        color: whitesmoke;
+        padding: 8px 0px;
+    }
+    .start-here span {
+
+    }
+    .mobile-img-set {
+        margin: 16px 16px 32px 16px;
+    }
+    .mobile-img-set img {
+
+    }
+    .mobile-set-content {
+        margin-left: 16px;
+        margin-bottom: 32px;
+        color: #4a4a4a;
+    }
+    .mobile-set-content p {
+        color: grey;
+        line-height: 1.5;
+    }
+    .mobile-img-set span {
+        color: cornflowerblue;
+    }
+    .start-learning {
+        justify-content: center;
+        padding-top: 16px;
+        font-size: 36px;
+        font-weight: bold;
+        color: #4a4a4a;
+    }
+    .start-learning span {
+
+    }
+    .mobile-column {
+        border: 1px solid lightgrey;
+        max-width: 100%;
+    }
+    .mobile-column-set {
+        margin: 16px 16px 32px 16px;
+        margin-top: 0px;
+        font-size: 24px;
+        font-weight: inherit;
+        color: #595959;
+    }
+    .column-set-content {
+        padding: 16px 0px 24px 16px;
+        background-color: lightgrey;
+        margin: 8px;
+    }
+    .Video {
+        color: #4a4a4a;
+    }
+    .video-header {
+        padding-top: 32px;
+        padding-bottom: 16px;
+        display: flex;
+        justify-content: center;
+        font-size: 36px;
+        font-weight: 800;
+}
+    }
+    .Video video {
+        width: 100%;
+        border: 1px solid lightgrey;
+        border-left: 0;
+    }
+    footer {
+        padding: 40px 0px 16px 16px;
+        color: grey;
+    }
+    footer span {
+
+    }
+}
+/*-- end of media quaries--*/
